@@ -1,0 +1,8 @@
+---
+# The variables file used by the playbooks in the dbservers group.
+
+mysqlservice: mysqld
+mysql_port: 3306
+dbuser: foouser
+dbname: foodb
+upassword: abc

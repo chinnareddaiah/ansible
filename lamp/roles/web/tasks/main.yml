@@ -1,0 +1,16 @@
+- name: Install http and php etc
+  yum: name={{ item }} state=present
+  with_items:
+   - httpd
+   - php
+   - php-mysql
+   - git
+   
+- name: http service state
+  service: name=httpd state=started enabled=yes
+  
+  #- name: Copy the code from repository
+  #git: repo={{ repository }} dest=/var/www/html/
+
+- name: Creates the index.php file
+  template: src=index.php.j2 dest=/var/www/html/index.php  

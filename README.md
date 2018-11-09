@@ -1,4 +1,4 @@
-# ansible
+# ansible example for Buildsetup
 1. Setup Build Machine by installing JDK 1.8, Maven
   $ ansible-playbook buildsetup.yml 
 
@@ -7,3 +7,6 @@
 
 3. Create EC2 machine & add an entry to dynamic hosts file
   $ ansible-playbook createEc2.yml 
+
+# ansible example for LAMP stack setup - Linux Apache Mysql PHP/Python
+$ ansible-playbook lamp.yml
